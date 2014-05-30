@@ -24,6 +24,9 @@ Same as above, but don't copy .pyc files.
 
     notify_loop ~/code/directory rsync -avz --exclude="*.pyc" ~/code/directory/ server.example.com:/stuff/
 
+By default, the process will terminate upon "the event" "transpiring".. Use your preferred looping paradigm to alter this behavior..
+
+    watchout(){ notifywait ~/.thereitis; say "there she went" && watchout; }; watchout > /dev/null
 
 ## Related software
 
